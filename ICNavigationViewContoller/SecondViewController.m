@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title  = @"SecondViewController";
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning {

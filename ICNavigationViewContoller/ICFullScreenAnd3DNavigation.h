@@ -1,5 +1,5 @@
 //
-//  ICPullScreenAnd3DNavigation.h
+//  ICFullScreenAnd3DNavigation.h
 //  ICNavigationViewContoller
 //
 //  Created by 朱封毅 on 10/05/16.
@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+@interface ICFullScreenAnd3DNavigation : UINavigationController  <UIGestureRecognizerDelegate>
 
-@interface ICPullScreenAnd3DNavigation : UINavigationController
+// Enable the drag to back interaction, Defalt is YES.
+@property (nonatomic,assign) BOOL dragBackEnable;
+
 
 @end

@@ -10,4 +10,9 @@
 
 @interface BaseViewController : UIViewController
 
+/**
+ *  保存前一个界面的截屏图
+ */
+@property (nonatomic, strong) UIImage *screenShotImage;
+
 @end
