@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "BaseViewController.h"
 #import "ICFullScreenAnd3DNavigation.h"
 #import "FirstViewController.h"
 @interface AppDelegate ()

@@ -2,7 +2,7 @@
 //  SecondViewController.m
 //  ICNavigationViewContoller
 //
-//  Created by 朱封毅 on 10/05/16.
+//  Created by 朱封毅 on 17/05/16.
 //  Copyright © 2016年 taihe. All rights reserved.
 //
 
@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title  = @"SecondViewController";
     self.view.backgroundColor = [UIColor blueColor];
 }
 

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 taihe. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface FirstViewController : BaseViewController
+@interface FirstViewController : UIViewController
 
 @end

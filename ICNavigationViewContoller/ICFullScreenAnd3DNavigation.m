@@ -19,10 +19,12 @@
     //上个view的截图
     UIImageView * lastScreenShotView;
 
+    UIImage *lastScreenImage;
 }
 
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, assign) BOOL isMoving;
+
 
 @end
 
@@ -98,9 +100,9 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     
-    if ([viewController isKindOfClass:[BaseViewController class]]) {
+    if ([viewController isKindOfClass:[UIViewController class]]) {
         
-        [(BaseViewController *)viewController setScreenShotImage:[self capture]];
+        lastScreenImage  = [self capture];
     }
     
     [super pushViewController:viewController animated:animated];
@@ -210,15 +212,7 @@
             blackMask.backgroundColor = [UIColor blackColor];
             [self.backgroundView addSubview:blackMask];
             
-            UIImage * screenShotImag = nil;
-            id lastObject = [self.viewControllers lastObject];
-            
-            if ([lastObject isKindOfClass:[BaseViewController class]]) {
-                
-                screenShotImag = [(BaseViewController *)lastObject screenShotImage];
-            }
-            
-            lastScreenShotView = [[UIImageView alloc] initWithImage:screenShotImag];
+            lastScreenShotView = [[UIImageView alloc] initWithImage:lastScreenImage];
             [self.backgroundView insertSubview:lastScreenShotView belowSubview:blackMask];
             break;
         }

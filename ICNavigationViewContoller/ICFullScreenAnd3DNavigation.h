@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+
 @interface ICFullScreenAnd3DNavigation : UINavigationController  <UIGestureRecognizerDelegate>
 
 // Enable the drag to back interaction, Defalt is YES.
